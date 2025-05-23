@@ -87,6 +87,8 @@ O arquivo `persistence.xml` configura a conexão com o banco MySQL, incluindo us
 
 > **Importante:** Certifique-se que o MySQL está ativo na porta `3307` e que o banco `estudos` existe. Caso use outra porta ou usuário, altere as propriedades adequadamente.
 
+> **Importante:** Não use 'drop-and-create' em produção prefira update!
+
 ---
 
 ## Etapa 03 - Criar a classe de conexão `JpaUtil`
