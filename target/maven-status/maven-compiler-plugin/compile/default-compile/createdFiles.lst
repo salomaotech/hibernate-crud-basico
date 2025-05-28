@@ -1,3 +1,4 @@
 com\salomaotech\models\Cliente.class
 com\salomaotech\utils\JpaUtil.class
 com\salomaotech\Main.class
+com\salomaotech\repositories\ClienteRepository.class
