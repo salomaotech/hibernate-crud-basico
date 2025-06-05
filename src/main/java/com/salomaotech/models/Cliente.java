@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 
 @Entity
 public class Cliente implements Serializable {
@@ -20,6 +21,9 @@ public class Cliente implements Serializable {
 
     @Column(name = "telefone")
     private String telefone;
+
+    @Lob
+    private byte[] imagemPerfil;
 
     public long getId() {
         return id;
@@ -43,6 +47,14 @@ public class Cliente implements Serializable {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public byte[] getImagemPerfil() {
+        return imagemPerfil;
+    }
+
+    public void setImagemPerfil(byte[] imagemPerfil) {
+        this.imagemPerfil = imagemPerfil;
     }
 
 }
